@@ -19,20 +19,16 @@ function draw() {
   text("De bol beweegt heen en weer (snelheid = " + snelheid + "). | Klik met je muis!",10,30);
   stroke('white');
   strokeWeight(10);
-
   if (mouseIsPressed == true && snelheid == 5) {
-      fill('green');
+      fill('dodgerblue');
   }
   else {
-    fill('dodgerblue');
+    fill('green');
   }
-  
-  if (x>880) {
-    snelheid = -1*snelheid;
-  }
-  if (x<120) {
-    snelheid = -1*snelheid;
-  }
+
+  if (x > 880 || x < 120) { snelheid = -1*snelheid; }
+
+
 
   x += snelheid;
   ellipse(x,170,diameter);

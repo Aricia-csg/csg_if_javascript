@@ -17,14 +17,14 @@ function draw() {
   rect(0,0,100,100);
   
   translate(140,0);
-  // BEGIN aanpassing
-  
+
+  push();
   stroke('cornsilk');
   strokeWeight(20);
   fill('teal');
   translate(0,40);  
   rect(0,0,100,100);  
-  // EINDE aanpassing
+  pop();
   
   translate(140,0);
   rect(0,0,100,100);
